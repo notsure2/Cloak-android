@@ -108,7 +108,7 @@ try mkdir -p $DEPS $SRC_DIR/main/jniLibs/armeabi-v7a $SRC_DIR/main/jniLibs/x86 $
 try cd $DEPS
 echo "Getting Cloak source code"
 rm -rf Cloak
-try git clone https://github.com/cbeuw/Cloak
+try git clone https://github.com/notsure2/Cloak
 cd Cloak
 try git checkout tags/$CK_RELEASE_TAG
 try go get -u ./...
