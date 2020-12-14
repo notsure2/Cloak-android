@@ -78,7 +78,7 @@ function try() {
 
 pushd ../..
 ANDROID_NDK_HOME="$(./gradlew -q printNDKPath)"
-CK_RELEASE_TAG=v"$(./gradlew -q printVersionName)"
+CK_RELEASE_TAG="$(./gradlew -q printVersionName)"
 popd
 
 while [ ! -d "$ANDROID_NDK_HOME" ]; do
@@ -110,7 +110,7 @@ echo "Getting Cloak source code"
 rm -rf Cloak
 try git clone https://github.com/notsure2/Cloak
 cd Cloak
-try git checkout tags/$CK_RELEASE_TAG
+try git checkout $CK_RELEASE_TAG
 try go get -u ./...
 
 cd cmd/ck-client
