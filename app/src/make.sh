@@ -111,7 +111,7 @@ rm -rf Cloak
 try git clone https://github.com/notsure2/Cloak
 cd Cloak
 try git checkout tags/$CK_RELEASE_TAG
-try go get -u ./...
+try go get ./...
 
 cd cmd/ck-client
 
