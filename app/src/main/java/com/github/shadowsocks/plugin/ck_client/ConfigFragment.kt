@@ -5,6 +5,7 @@ import androidx.preference.EditTextPreference
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
+import com.github.shadowsocks.plugin.ConfigurationActivity
 import com.github.shadowsocks.plugin.PluginContract
 import com.github.shadowsocks.plugin.PluginOptions
 
@@ -43,15 +44,10 @@ class ConfigFragment : PreferenceFragmentCompat() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putString(PluginContract.EXTRA_OPTIONS, options.toString())
+        (this.activity as ConfigurationActivity).saveChanges(this.options)
     }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        if (savedInstanceState != null) {
-            options = PluginOptions(savedInstanceState.getString(PluginContract.EXTRA_OPTIONS))
-            onInitializePluginOptions(options)
-        }
         addPreferencesFromResource(R.xml.config)
     }
 }
