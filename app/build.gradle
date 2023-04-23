@@ -13,7 +13,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 19
-        versionName '2.6.2-notsure2-1'
+        versionName '2.7.1-notsure2-1'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
