@@ -50,5 +50,15 @@
             android:digits="0123456789" android:title="@string/cloak_stream_timeout" android:singleLine="true" />
         <EditTextPreference android:key="KeepAlive" android:persistent="false" android:inputType="numberDecimal"
             android:digits="0123456789" android:title="@string/cloak_keepalive" android:singleLine="true" />
+        <EditTextPreference
+            android:key="LoopbackTcpSendBuffer"
+            android:persistent="false"
+            android:inputType="numberDecimal"
+            android:title="@string/cloak_tcp_send_buffer" />
+        <EditTextPreference
+            android:key="LoopbackTcpReceiveBuffer"
+            android:persistent="false"
+            android:inputType="numberDecimal"
+            android:title="@string/cloak_tcp_receive_buffer" />
     </PreferenceCategory>
 </PreferenceScreen>

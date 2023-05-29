@@ -13,4 +13,6 @@
     <string name="cloak_proxy_method">Proxy Method</string>
     <string name="cloak_stream_timeout">Stream Timeout</string>
     <string name="cloak_keepalive">Keep Alive</string>
+    <string name="cloak_tcp_send_buffer">TCP Send Buffer</string>
+    <string name="cloak_tcp_receive_buffer">TCP Receive Buffer</string>
 </resources>
