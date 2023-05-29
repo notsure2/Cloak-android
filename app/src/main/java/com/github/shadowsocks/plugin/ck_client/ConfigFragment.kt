@@ -23,7 +23,7 @@ class ConfigFragment : PreferenceFragmentCompat() {
             val key = element.first
             val defaultValue = element.second
             val pref: Preference? = findPreference(key)
-            val value: String? = options[key] ?:defaultValue
+            val value: String = if ((options[key] ?: "").isBlank()) defaultValue else (options[key]?.trim() ?: "")
             when (pref) {
                 is ListPreference -> {
                     pref.value = value
