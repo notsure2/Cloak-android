@@ -12,8 +12,11 @@
             android:summary="%s"
             android:entries="@array/algorithms"
             android:entryValues="@array/algorithms" />
-        <ListPreference android:title="@string/cloak_transport" android:entries="@array/transportTypes"
-            android:entryValues="@array/transportTypes" android:key="Transport" />
+        <ListPreference
+            android:title="@string/cloak_transport"
+            android:entries="@array/transportTypes"
+            android:entryValues="@array/transportTypes"
+            android:key="Transport" />
         <EditTextPreference android:key="UID" android:persistent="false" android:title="@string/cloak_uid" />
         <EditTextPreference
             android:key="PublicKey"
@@ -44,21 +47,39 @@
             android:summary="%s"
             android:entries="@array/browsers"
             android:entryValues="@array/browsers" />
-        <EditTextPreference android:key="NumConn" android:persistent="false" android:inputType="numberDecimal"
-            android:digits="0123456789" android:title="@string/cloak_num_conn" />
-        <EditTextPreference android:key="StreamTimeout" android:persistent="false" android:inputType="numberDecimal"
-            android:digits="0123456789" android:title="@string/cloak_stream_timeout" android:singleLine="true" />
-        <EditTextPreference android:key="KeepAlive" android:persistent="false" android:inputType="numberDecimal"
-            android:digits="0123456789" android:title="@string/cloak_keepalive" android:singleLine="true" />
+        <EditTextPreference
+            android:key="NumConn"
+            android:persistent="false"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:title="@string/cloak_num_conn" />
+        <EditTextPreference
+            android:key="StreamTimeout"
+            android:persistent="false"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:title="@string/cloak_stream_timeout"
+            android:singleLine="true" />
+        <EditTextPreference
+            android:key="KeepAlive"
+            android:persistent="false"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:title="@string/cloak_keepalive"
+            android:singleLine="true" />
         <EditTextPreference
             android:key="LoopbackTcpSendBuffer"
             android:persistent="false"
             android:inputType="numberDecimal"
-            android:title="@string/cloak_tcp_send_buffer" />
+            android:digits="0123456789"
+            android:title="@string/cloak_tcp_send_buffer"
+            android:singleLine="true" />
         <EditTextPreference
             android:key="LoopbackTcpReceiveBuffer"
             android:persistent="false"
             android:inputType="numberDecimal"
-            android:title="@string/cloak_tcp_receive_buffer" />
+            android:digits="0123456789"
+            android:title="@string/cloak_tcp_receive_buffer"
+            android:singleLine="true" />
     </PreferenceCategory>
 </PreferenceScreen>
