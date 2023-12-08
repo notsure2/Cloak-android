@@ -18,7 +18,8 @@ class ConfigFragment : PreferenceFragmentCompat() {
                 Pair("Transport", "direct"), Pair("UID", ""), Pair("PublicKey",""), Pair("ServerName", "bing.com"),
                 Pair("AlternativeNames", ""), Pair("CDNOriginHost", ""), Pair("CDNWsUrlPath", ""), Pair("NumConn","4"),
                 Pair("BrowserSig", "chrome"), Pair("StreamTimeout","300"), Pair("KeepAlive", "0"),
-                Pair("LoopbackTcpSendBuffer", "0"), Pair("LoopbackTcpReceiveBuffer", "0"))
+                Pair("LoopbackTcpSendBuffer", "0"), Pair("LoopbackTcpReceiveBuffer", "0"),
+                Pair("RemoteTcpSendBuffer", "0"), Pair("RemoteTcpReceiveBuffer", "0"))
         for (element in ary) {
             val key = element.first
             val defaultValue = element.second

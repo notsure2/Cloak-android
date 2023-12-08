@@ -72,14 +72,28 @@
             android:persistent="false"
             android:inputType="numberDecimal"
             android:digits="0123456789"
-            android:title="@string/cloak_tcp_send_buffer"
+            android:title="@string/cloak_loopback_tcp_send_buffer"
             android:singleLine="true" />
         <EditTextPreference
             android:key="LoopbackTcpReceiveBuffer"
             android:persistent="false"
             android:inputType="numberDecimal"
             android:digits="0123456789"
-            android:title="@string/cloak_tcp_receive_buffer"
+            android:title="@string/cloak_loopback_tcp_receive_buffer"
             android:singleLine="true" />
+        <EditTextPreference
+                android:key="RemoteTcpSendBuffer"
+                android:persistent="false"
+                android:inputType="numberDecimal"
+                android:digits="0123456789"
+                android:title="@string/cloak_remote_tcp_send_buffer"
+                android:singleLine="true" />
+        <EditTextPreference
+                android:key="RemoteTcpReceiveBuffer"
+                android:persistent="false"
+                android:inputType="numberDecimal"
+                android:digits="0123456789"
+                android:title="@string/cloak_remote_tcp_receive_buffer"
+                android:singleLine="true" />
     </PreferenceCategory>
 </PreferenceScreen>
