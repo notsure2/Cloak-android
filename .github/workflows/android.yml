@@ -41,7 +41,7 @@ jobs:
       run: echo "NDK_VERSION=$(./gradlew --no-daemon -q printNDKVersion)" >> $GITHUB_OUTPUT
 
     - name: Set up NDK
-      run: sdkmanager install 'ndk;${{ steps.determine-ndk-version.outputs.NDK_VERSION }}'
+      run: sdkmanager 'ndk;${{ steps.determine-ndk-version.outputs.NDK_VERSION }}'
       
     - name: Determine Android NDK Path
       id: determine-ndk-path
