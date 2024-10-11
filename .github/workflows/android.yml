@@ -31,9 +31,14 @@ jobs:
 
     - name: Set up Android SDK
       uses: android-actions/setup-android@v3
+      
+    - name: Determine Android NDK Version
+      id: determine-ndk-version
+      run: echo "NDK_VERSION=$(./gradlew --no-daemon printNDKVersion)" >> $GITHUB_OUTPUT
 
     - name: Set up NDK
       id: setup_ndk
+      ndk-version: ${{ steps.determine-ndk-version.outputs.NDK_VERSION }}
       uses: nttld/setup-ndk@v1
       with:
         link-to-sdk: true
