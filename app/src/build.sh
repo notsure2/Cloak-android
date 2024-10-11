@@ -86,7 +86,7 @@ git clone https://github.com/notsure2/Cloak
 cd Cloak
 git checkout tags/$CK_RELEASE_TAG
 go get ./...
-
+cd cmd/ck-client
 
 echo "Cross compiling ckclient for arm"
 env CGO_ENABLED=1 CC="$ANDROID_ARM_CC" GOOS=android GOARCH=arm GOARM=7 go build -buildvcs=false -trimpath -ldflags="-s -w -buildid="
