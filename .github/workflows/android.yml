@@ -32,7 +32,7 @@ jobs:
     - name: Set up Android SDK
       uses: android-actions/setup-android@v3
       with:
-        packages: 'tools platform-tools ndk'
+        packages: 'tools platform-tools ndk;latest'
 
     - name: Compile Go libs
       run: |
