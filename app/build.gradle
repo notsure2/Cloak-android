@@ -55,6 +55,6 @@ task printNDKPath {
 
 task printNDKVersion {
     doLast {
-        println android.ndkVersion
+        println android.ndk
     }
 }
