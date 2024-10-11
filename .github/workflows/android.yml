@@ -38,9 +38,9 @@ jobs:
 
     - name: Set up NDK
       id: setup_ndk
-      ndk-version: ${{ steps.determine-ndk-version.outputs.NDK_VERSION }}
       uses: nttld/setup-ndk@v1
       with:
+        ndk-version: ${{ steps.determine-ndk-version.outputs.NDK_VERSION }}
         link-to-sdk: true
         add-to-path: false
 
