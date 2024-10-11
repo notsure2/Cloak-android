@@ -34,7 +34,7 @@ jobs:
       
     - name: Determine Android NDK Version
       id: determine-ndk-version
-      run: echo "NDK_VERSION=$(./gradlew --no-daemon printNDKVersion)" >> $GITHUB_OUTPUT
+      run: echo "NDK_VERSION=$(./gradlew --no-daemon printNDKVersion | grep \. | head -n1)" >> $GITHUB_OUTPUT
 
     - name: Set up NDK
       id: setup_ndk
