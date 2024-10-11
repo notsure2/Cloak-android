@@ -61,7 +61,7 @@ popd
 while [ ! -d "$ANDROID_NDK_HOME" ]; do
   echo "Path to ndk-bundle not found"
   exit -1
-fi
+done
 
 getHostTag
 MIN_API=21
